@@ -49,8 +49,7 @@ E.forEach((e,i)=>{
   const t=document.createElement("button");t.className="tab";t.role="tab";t.id="tab"+e.n;t.setAttribute("aria-selected","false");
   t.innerHTML='<span>'+e.n+'</span>'+e.name;t.onclick=()=>show(e.n);tabs.append(t);
   const p=document.createElement("section");p.className="panel";p.id="p"+e.n;p.hidden=true;
-  p.innerHTML='<div class="title"><h2>'+e.n+'. '+e.name+'</h2><p>'+e.when+'</p></div>'+
-  '<div class="cols"><div class="col orig"><div class="lab">Original <i>'+e.version+'</i></div><div class="frame"><img alt="Original email: '+e.name+'" src="shots/'+e.shot+'"></div></div>'+
+  p.innerHTML='<div class="cols"><div class="col orig"><div class="lab">Original <i>'+e.version+'</i></div><div class="frame"><img alt="Original email: '+e.name+'" src="shots/'+e.shot+'"></div></div>'+
   '<div class="col new"><div class="lab">Redesign <i>'+e.version+'</i></div><div class="frame"><iframe title="Redesign: '+e.name+'" scrolling="no"></iframe></div></div>'+
   '<div class="col chg"><div class="log"><h3>Changes and why</h3><ol></ol></div></div></div>';
   const ol=p.querySelector("ol");
