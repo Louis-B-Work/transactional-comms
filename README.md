@@ -1,4 +1,4 @@
-# Transactional comms: post-application email redesigns
+# Transac comms emails
 
 Open `index.html` (the GitHub Pages site) for the nine redesigned emails, each beside the original and a short "Changes and why" list.
 
